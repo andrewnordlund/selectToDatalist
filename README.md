@@ -1,2 +1,2 @@
 # selectToDatalist
-Some Javascript convert `&lt;select>`s to `&lt;input list="someID"> &lt;datalist id="someID">`.
+Some Javascript convert `<select>`s to `<input list="someID"> <datalist id="someID">`.

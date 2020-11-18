@@ -1,11 +1,12 @@
 var dbug = true;
-var controls = {"sel1":null, "sel2":null, "sel3":null, "sel4":null, "convertBtn":null}
+var controls = {"sel1":null, "sel2":null, "convertBtn":null}
 var selects = [];
 
 
 function init () {
 	if (dbug) console.log ("Initing");
 	for (var control in controls) {
+		if (dbug) console.log ("Looking for " + control + ".");
 		controls[control] = document.getElementById(control);
 
 		if (controls[control].tagName== "SELECT") {

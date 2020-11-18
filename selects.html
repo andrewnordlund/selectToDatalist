@@ -4,58 +4,63 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Select Test Page</title>
-		<link rel="Stylesheet" href="selects.css" type="text/css">
-	<!--	<script src="selects.js"></script> -->
+		<link rel="Stylesheet" href="selectToDatalist.css" type="text/css">
+		<script src="selectToDataList.js"></script>
 	</head>
 	<body>
 		<header>
 			<h1>Select Test Page</h1>
 		</header>
 		<main>
-		<form action="" method="GET">
-		<div class="fieldHolder">
-			<label for="sel1">Select something</label>
-			<select name="sel1" id="sel1">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-				<option>Option 4</option>
-			</select>
-		</div>
-		<div class="fieldHolder">
-			<label for="sel2">Select something else</label>
-			<select name="sel2" id="sel2">
-				<option value="opt1">Option 1</option>
-				<option value="opt2">Option 2</option>
-				<option value="opt3">Option 3</option>
-				<option value="opt4">Option 4</option>
-			</select>
-		</div>
-		<div class="fieldHolder">
-			<label for="sel3">Say something</label>
-			
-			<input list="dl1" name="sel3" id="sel3">
-			<datalist id="dl1">
-				<option>Option 1</option>
-				<option>Option 2</option>
-				<option>Option 3</option>
-				<option>Option 4</option>
-			</datalist>
-		</div>
-		<div class="fieldHolder">
-			<label for="sel4">Say something else</label>
-			<input name="sel4" id="sel4" list="dl2">
-			<datalist id="dl2">
-				<option value="opt1">Option 1</option>
-				<option value="opt2">Option 2</option>
-				<option value="opt3">Option 3</option>
-				<option value="opt4">Option 4</option>
-			</datalist>
-		</div>
-
-		<div class="fieldHolder">
-			<input type="submit">
-		</div>
+			<div class="content">
+				<div class="form-group">
+					<button type="button" id="convertBtn">Convert</button>
+				</div>
+				<form action="" method="GET">
+				<div class="form-group">
+					<label for="sel1">Select something</label>
+					<select name="sel1" id="sel1">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						<option>Option 4</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="sel2">Select something else</label>
+					<select name="sel2" id="sel2">
+						<option value="opt1">Option 1</option>
+						<option value="opt2">Option 2</option>
+						<option value="opt3">Option 3</option>
+						<option value="opt4">Option 4</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="sel3">Say something</label>
+					
+					<input list="dl1" name="sel3" id="sel3">
+					<datalist id="dl1">
+						<option>Option 1</option>
+						<option>Option 2</option>
+						<option>Option 3</option>
+						<option>Option 4</option>
+					</datalist>
+				</div>
+				<div class="form-group">
+					<label for="sel4">Say something else</label>
+					<input name="sel4" id="sel4" list="dl2">
+					<datalist id="dl2">
+						<option value="opt1">Option 1</option>
+						<option value="opt2">Option 2</option>
+						<option value="opt3">Option 3</option>
+						<option value="opt4">Option 4</option>
+					</datalist>
+				</div>
+	
+				<div class="form-group">
+					<input type="submit">
+				</div>
+			</div>
 		</main>
 		<footer>
 		</footer>

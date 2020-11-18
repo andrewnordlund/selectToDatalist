@@ -49,6 +49,7 @@ function convert () {
 			var newValInput = document.createElement("input");
 			newValInput.setAttribute("name",  selects[i].getAttribute("name"));
 			newValInput.setAttribute("id", selects[i].getAttribute("name") + i);
+			newValInput.setAttribute("style", "position: absolute; left: -1000px");
 			newInput.setAttribute("name", selects[i].getAttribute("name") + i);
 			newInput.addEventListener("change", setVal, false);
 			newInput.setAttribute("form", "akdskjajfkd");
@@ -85,6 +86,7 @@ function setVal(e) {
 			if (newValInput) {
 				newValInput.value = optVal;
 				el.value = opt.innerHTML;
+				newValInput.setAttribute("type", "hidden");
 			} else {
 				if (dbug) console.log ("Couldn't find newValInput: " + name + ".");
 			}

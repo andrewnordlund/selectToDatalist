@@ -12,7 +12,7 @@
 if (dbug) console.log ("convert::running");
 var selects = null;
 var datalists = [];
-var dbug = !false;
+var dbug = false;
 
 selects = document.getElementsByTagName("select");
 if (selects) {

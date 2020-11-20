@@ -1,4 +1,4 @@
-var dbug = true;
+var dbug = !true;
 var controls = {"sel1":null, "sel2":null, "convertBtn":null}
 var selects = [];
 
